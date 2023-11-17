@@ -16,18 +16,18 @@ git commit -m "add README.md"
 
 ### 모든 변경사항 기록  
 
-    ```git add --all```
+```git add --all```
 
 - 모든 파일을 다 추가하고 싶을 때 사용하는 명령어
 
 
 ### 작업 파일 제외
 
-    ```.gitignore``` 에 기록된 파일은 Git이 추가하지 않는다.
+```.gitignore``` 에 기록된 파일은 Git이 추가하지 않는다.
 
 ### 작업 이력 확인
 
-    ```git log``` 
+```git log``` 
 
 - 몇 번의 작업이력 , 누가 했는 지 로그 확인 가능 명령어
 

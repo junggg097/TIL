@@ -6,18 +6,18 @@
 git config --global user.email "내 이메일"
 git config --global user.name "내 이름"
 ```
-- git : Git을 사용하는 명령어
-- config : Git에 설정을 저장하겠다는 의미
-- --global : 이 설정을 Git이 관리하는 프로젝트에 상관없이 사용한다는 의미
-- user.email : 이 Git을 사용하는 사용자의 이메일 설정
-- user.name : 이 Git을 사용하는 사용자의 이름 설정
+- ```git``` : Git을 사용하는 명령어
+- ```config``` : Git에 설정을 저장하겠다는 의미
+- ```--global``` : 이 설정을 Git이 관리하는 프로젝트에 상관없이 사용한다는 의미
+- ```user.email``` : 이 Git을 사용하는 사용자의 이메일 설정
+- ```user.name``` : 이 Git을 사용하는 사용자의 이름 설정
 
   
 ## 버전 관리 시작
 
 1. 프로젝트를 모아두는 폴더 생성  
     
-    ![image](1117-1.png)
+    ![image](1117-1.PNG)
 
 2. 폴더 내부에서 Git으로 관리하고자 하는 프로젝트를 나타내는 새로운 폴더 ```TIL```  생성  
 
