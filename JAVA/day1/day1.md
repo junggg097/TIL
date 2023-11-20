@@ -6,4 +6,4 @@
 - [배열](array.md)
 
 
-## Question
+## [Question](question.md)
