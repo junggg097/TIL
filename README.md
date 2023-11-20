@@ -12,3 +12,7 @@
 - [Git - init, add, commit](Git/git-init,add,commit.md)
 - [Git - 업로드, 다운로드](Git/git-upload,download.md)
 - [Git- 파일추가, 취소](Git/git-File.md)
+
+## Java
+
+- [변수와 자료형](JAVA/day1/day1.md)
