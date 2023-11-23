@@ -1,5 +1,6 @@
 # Method
 
+## [Question](question.md)
 ## 함수
 - 독립적으로 실행될 수 있는 코드 조각
 
