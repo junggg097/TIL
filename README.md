@@ -17,3 +17,5 @@
 
 - [변수와 자료형](JAVA/day1/day1.md)
 - [연산자](JAVA/day2/day2.md)
+- [제어문](JAVA/day3/day3.md)
+- [메소드](JAVA/day4/day4.md)
