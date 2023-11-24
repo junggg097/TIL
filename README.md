@@ -19,3 +19,5 @@
 - [연산자](JAVA/day2/day2.md)
 - [제어문](JAVA/day3/day3.md)
 - [메소드](JAVA/day4/day4.md)
+- [클래스](JAVA/day5/day5.md)
+- [생성자](JAVA/day5/day5-2.md)
