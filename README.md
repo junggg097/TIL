@@ -21,3 +21,5 @@
 - [메소드](JAVA/day4/day4.md)
 - [클래스](JAVA/day5/day5.md)
 - [생성자](JAVA/day5/day5-2.md)
+- [데이터 저장](JAVA/day6/day6.md)
+- [객체 지향 프로그래밍](JAVA/day6/day6-2.md)
