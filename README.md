@@ -22,5 +22,5 @@
 - [클래스](JAVA/day5/day5.md)
 - [데이터 저장](JAVA/day6/day6.md)
 - [객체 지향 프로그래밍](JAVA/day6/day6-2.md)
-- [상속]()
+- [상속](JAVA/day7/day7.md)
 - [Sort](JAVA/day14/day14-1.md)
