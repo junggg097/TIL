@@ -1,5 +1,16 @@
 # Class
-
+데이터와 행동을 하나의 단위로 묶어서 객체로 활용하기 위한 설계도.
+- 클래스   
+  - 클래스 만들기   
+    - [속성(attribute)](#속성--attribute) 
+    - [메서드(method)](#메서드methods)  
+    - [정적(static) 제어자](#정적static-제어자)  
+  - [접근 제어자](#접근-제어자)   
+    - public & private   
+    - [Getter & Setter](#getter--setter)   
+    - [생성자(Constructor)](day5-2.md)  
+  - [Wrapper Class](day5-3.md)   
+    - 유용한 메서드들
 ```java
 Person me = new Person();
 ```
