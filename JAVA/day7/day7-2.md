@@ -99,3 +99,31 @@ Person alex2 = new Lecturer("Alex", 20, "OOP");
 System.out.println(alex.equals(alex2));  // false
 System.out.println(alex2.equals(alex));  // true
 ```
+
+## null
+```null``` 은 존재하지 않는다는 것을 의미한다.  
+어떤 참조 타입 변수에 값이 할당되지 않으면 , 해당 객체가 존재하지 않는다는 의미로 ```null``` 이 할당된다.
+```java
+// 속성을 할당하지 않는 기본생성자를 만들고
+Person noNamePerson = new Student();
+// 할당되지 않은 속성을 확인해보자.
+System.out.println(noNamePerson.getName());  // null
+
+```
+만약 어떤 객체가 ```null``` 인 상태에서 메서드를 사용하려 하면 ,```NullPointerException``` 발생한다.
+```java
+Person noNamePerson = new Student();
+// null
+System.out.println(noNamePerson.getName());
+// throws NullPointerException
+System.out.println(noNamePerson.getName().equals("Alex"));
+
+```
+간단하게는 ```if``` 등의 조건문으로 방지하거나 , 분명히 ```null```이 아는 대상의 메서드 기준으로 동작시킬 수 있다.
+```java
+Person noNamePerson = new Student();
+System.out.println(noNamePerson.getName());
+// System.out.println(noNamePerson.getName().equals("Alex"));
+System.out.println("Alex".equals(noNamePerson.getName()));
+
+```
