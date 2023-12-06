@@ -1,10 +1,10 @@
 # Collections Framework
-- [List<E>]
-- [Set<E>]
-- [Iterable & Collecion]
-  - Iterable
-  - Colleciton
-  - Map<K,V>
+- [List<E>](#liste)
+- [Set<E>](#sete)
+- [Iterable & Collecion](#iterable--collection)
+  - [Iterable](#interable)
+  - [Colleciton](#collection)
+  - [Map<K,V>](#mapk-v)
 
 ## List<E>
 여러 개의 데이터를 순서를 갖추고 정리한다. 중복의 데이터가 허용된다.
