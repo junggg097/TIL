@@ -25,6 +25,7 @@
 - [상속](JAVA/day7/day7.md)
 - [Generic](JAVA/day8/day8.md)
 - [Stream](JAVA/day9/day9.md)
+## 알고리즘
 - [Sort](JAVA/day14/day14-1.md)
 - [Stack](JAVA/day15/day15-1.md)
 - [Queue](JAVA/day16/day16.md)
