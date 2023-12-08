@@ -1,7 +1,7 @@
 # Brute Force
-- 순열
-- 조합
-- Powerset
+- [순열](#순열)
+- [조합](day17-1.md)
+- [Powerset](day17-2.md)
 
 
 ## Brute Force
@@ -18,6 +18,8 @@ Brute Force 알고리즘 -> 무작정 가능한 모든 경우를 다 검사하�
 
 
 ## 순열
+- [for문 활용](#단순한-순열-제작---for-반복문-활용)
+- [재귀함수 활용](#단순한-순열-제작---재귀함수-활용)
 
 ![순열](순열.PNG)
   
@@ -73,8 +75,9 @@ public class Permutation {
 2 1 0
 ```
  - 0 ~ n -1 의 숫자로 나열 하려면 매개변수 n 추가 !
+ - EX ) 야구 게임
 ```java
-// 0 ~ n -1  의 숫자로 만들 수 있는 숫자 나열 전부 출력하는 메서드
+// 0 ~ n -1  의 숫자로 만들 수 있는 3가지 숫자 나열 전부 출력하는 메서드
     public static void perSimple(int n) {
         int first;
         int second;
@@ -108,3 +111,67 @@ public class Permutation {
 }
 
 ```
+
+### 단순한 순열 제작 - 재귀함수 활용
+for 문을 활용하면 r 이 증가하면 for 반복을 동적으로 더 많이 만들어주어야 한다   
+재귀함수를 활용하면 코드를 효율적으로 줄일 수 있다 !!
+```java
+    // 재귀함수로 더 많은 원소를 선택하는 순열을 만들어보자.
+    public static void permRecurHelper(
+            // 순열을 구할 때 필요한거 : 고르는 대상 , 고르는 갯수
+            int n , int r,
+            // 내가 지금 몇 번째 원소를 고르고 있는지
+            int depth,
+            // 어떤 요소들을 사용했는 지 저장하는 배열
+            boolean[] used,
+            // 결과를 저장하기 위한 배열
+            int[] perm
+    ) {
+        // 내가 고른것의 갯수가 고를 것의 개수와 같아지면 중단.
+        if (depth == r) {
+            System.out.println(Arrays.toString(perm));
+        }
+        else {
+            // n 개의 원소 중 하나를 선택하는 for
+            for ( int i = 0; i < n; i++) {
+                // 이미 선택했다면 스킵
+                if (used[i]) continue;
+                // 선택을 할 때 first = i; 의 형태로 작성했던 부분
+                perm[depth] = i;
+                // 내가 이번에 i 를 선택했다는 걸 기록
+                used[i] = true;
+                // 중첩된 for 대산 재귀 호출
+                permRecurHelper(n, r, depth + 1, used, perm);
+                // 이 i에서 출발하는 순열을 다 찾으면 , 다음 i 를 쓰기 위해 기록 변경
+                used[i] = false;
+            }
+        }
+    }
+
+    // 사용성을 위해 실제 메서드를 분리한다. (n, r 만 있어도 실행 되게끔 )
+    public static void permRecursive(int n , int r) {
+        permRecurHelper(n , r , 0 , new boolean[n], new int[r]);
+    }
+
+    public static void main(String[] args) {
+        permRecursive(4 ,2);
+    }
+
+```
+```java
+// 실행 결과
+[0, 1]
+[0, 2]
+[0, 3]
+[1, 0]
+[1, 2]
+[1, 3]
+[2, 0]
+[2, 1]
+[2, 3]
+[3, 0]
+[3, 1]
+[3, 2]
+```
+
+
