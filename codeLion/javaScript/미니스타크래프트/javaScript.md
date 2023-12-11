@@ -181,18 +181,18 @@ $('#drone').click(function (){
     // 기본 설정 hp
     var hp = 3;
     $('#drone').click(function (){
-    $(#'spit').fadeIn();
-    $(#'spit').animate({left : '+=250'});
-    $(#'spit').fadeOut(function(){
-        hp = hp -1;
-        $('#hp').text('HP : ' + hp);
-        // HP 가  0 이 되면
-        // bunker가 fadeOut() 사라진다.
-        if (hp == 0) {
-            $('#bunker').fadeOut();
-        }       
-    });
-    $(#'spit').css({left: '150px'});
+        $(#'spit').fadeIn();
+        $(#'spit').animate({left : '+=250'});
+        $(#'spit').fadeOut(function(){
+            hp = hp -1;
+            $('#hp').text('HP : ' + hp);
+            // HP 가  0 이 되면
+            // bunker가 fadeOut() 사라진다.
+            if (hp == 0) {
+                $('#bunker').fadeOut();
+            }       
+        });
+        $(#'spit').css({left: '150px'});
     
 })
 </script>
