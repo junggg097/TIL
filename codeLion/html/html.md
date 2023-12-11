@@ -1,3 +1,5 @@
+# HTML / CSS
+- [About me](#html--css-활용한-about-me) 
 # 문서의 골격
 
 ```html
@@ -6,7 +8,7 @@
 <head>
     // 한글 인코딩
     <meta charset="UTF-8">
-    // 페이지 타이틀 
+    // 문서의 제목 
     <title>정유진의 이력서</title>
 </head>
 <body>
@@ -17,6 +19,8 @@
 </body>
 </html>
 ```
+- >  `head` : content 의 구조
+- > `body` : content
 
 # css 
 - css 파일은 <head> 에 추가한다.
@@ -81,7 +85,7 @@ footer {
 
 ## 박스 쪼개기
 
-![박스쪼개기](css.png)
+![박스쪼개기](htmlImg/css.png)
 - margin : 상자 밖 영역 ( 상자가 옷 입는다고 생각해 !)
 - Border : 테두리
 - padding : 테두리와 내용물 사이에 있는 빈틈
@@ -135,3 +139,55 @@ footer {
 
 }
 ```
+
+## float ?
+- > 주로 이미지 주변에 텍스트를 감싸기 위해 만들어졌다.
+- > 같은 줄에 왼쪽, 오른쪽 정렬하기 위해서  float 사용 !!
+- > 둥둥 ~ 떠다닌다 ~~ 라고 생각해라
+
+```css
+
+.title-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    // 왼쪽으로 띄우기
+    float: left;
+}
+
+.year-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    // 오른쪽으로 띄우기
+    float: right;
+}
+```
+![float](htmlImg/float.PNG)
+- > 엇 근데 둥둥 떠다녀서 다른 요소들과 겹칠 수 있다 !!
+그러면 ? 
+```css
+.float-wrap {
+    overflow: hidden;
+}
+```
+
+`overflow: hidden` 을 사용한다.  
+
+![overflow](htmlImg/overflow.PNG)
+
+
+## 이미지 넣기
+
+```html
+<a href="http://facebook.com"><img class="sns-img" src="images/facebook.png"></a>
+```
+- `<a href =" 링크"></a>` : 링크로 연결
+- `<img src="이미지가 있는 주소">` : 이미지 넣기
+
+
+# HTML / CSS 활용한 About Me
+![aboutme](htmlImg/aboutme.PNG)
+
+- [about-me.html](about-Me.html)
+- [aboutme.css](aboutme.css)

@@ -5,7 +5,7 @@
 }
 
 body,h1,h2 {
-    margin:0px;
+    margin: 0px;
     padding:0px;
 }
 
@@ -28,6 +28,9 @@ h2 {
     padding-bottom: 5px;
 }
 
+.title-box {
+    text-align: right;
+}
 
 .mainbox {
     width: 610px;
@@ -67,6 +70,30 @@ section {
     font-weight: bold;
     color: #282828;
     float: right;
+}
+
+.float-wrap {
+    overflow: hidden;
+}
+
+
+.desc-text {
+    font-size: 9px;
+}
+
+.desc-subtext {
+    font-size: 9px;
+    color: #282828;
+    padding-left: 16px;
+}
+
+.sns-img {
+    width: 12px;
+    height: 12px;
+}
+
+.sns-wrap {
+    text-align: right;
 }
 footer {
     text-align: center;
