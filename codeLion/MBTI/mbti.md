@@ -117,8 +117,7 @@ var q = {
 ```
 진행바는 width 값으로 움직인다.   
 - > 100 진행률 12문제중 문제 수
-
-<br>
+  
 ##  .attr 
 
 : 태그를 바꿔주는 속성
@@ -138,7 +137,6 @@ function next() {
     }
 ```
 
-<br>
 # MBTI 핵심 로직
 ```html
 <input type="hidden" id="EI" value="0">
