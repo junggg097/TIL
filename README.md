@@ -35,4 +35,4 @@
 - [HTML / CSS](codeLion/html/html.md)
 - [세렝게티 MBTI](codeLion/MBTI/mbti.md)
 ## Frontend
-- [Frontend](Frontend/html.md)
+- [Frontend](Frontend/frontend.md)
