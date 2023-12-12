@@ -112,14 +112,13 @@ var q = {
 ## 진행바 표시
 ```html
 <div class="progress mt-5">
-    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" ></div>
 </div>
 ```
-
 진행바는 width 값으로 움직인다.   
-- > 100 진행률 12문제중 문제수
-- > style="width: calc(100/12*1%)"
+- > 100 진행률 12문제중 문제 수
 
+<br>
 ##  .attr 
 
 : 태그를 바꿔주는 속성
@@ -139,7 +138,7 @@ function next() {
     }
 ```
 
-
+<br>
 # MBTI 핵심 로직
 ```html
 <input type="hidden" id="EI" value="0">
@@ -168,3 +167,34 @@ var mbti = "";
 ($("#TF").val() < 2) ?  mbti += "F" : mbti += "T";
 ($("#JP").val() < 2) ?  mbti += "P" : mbti += "J";
 ```
+
+## 결과화면에 결과 도출하기 !
+
+- 각 항목들에 id를 지정해준다
+```html
+<article class="result">
+    <img id="img" class="rounded-circle mt-5" src="lion.jpg" alt="사자!">
+    <h2 id="animal" class="text-center mt-5">동물 이름</h2>
+    <h3 id="explain" class="text-center mt-5">설명</h3>
+</article>
+```
+
+- 결과 도출할 js
+```javascript
+var result = {
+    "ISTJ": {"animal": "하마", "explain": "하마 설명", "img": "lion.jpg"},
+    "ISFJ": {"animal": "부엉이", "explain": "부엉이 설명", "img": "lion.jpg"},
+    "INFJ": {"animal": "물소", "explain": "물소 설명", "img": "lion.jpg"}
+}
+
+function next() {
+    // ...
+    $("#img").attr("scr", result[mbti]["img"]);
+    $("#animal").html(result[mbti]["animal"]);
+    $("#explain").html(result[mbti]["explain"]);
+}
+```
+- 결과값 result = mbti : { mbti 동물이름 , 설명 , 이미지 정보 값 }
+- > `$("#img").attr("scr", result[mbti]["img"]);`
+- result 라는 Object 에서 [key] mbti 에 해당하는 value img, animal, explain 을 가져와서  
+ #img, #animal, #explain 에 넣는다.
