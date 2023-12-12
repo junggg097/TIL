@@ -1,6 +1,7 @@
 # MBTI
 - [HTML](index.html)
 - [CSS](style.css)
+- https://mbtitest10101010.netlify.app/
 
 
 ### MBTI
