@@ -1,6 +1,5 @@
 # HTML
 
-## HTML
 - HyperText Markup Language
 - 구조를 표현하기 위한 언어
 - Markdown과 역할이 유사
@@ -23,10 +22,13 @@
 ```html
 <html>
     <head>
+        // HTML 문서 자체에 대한 정보(metadata)를 정의하기 위한 요소
     </head>
     <body>
+        // HTML 문서를 통해 사용자에게 전달하고 싶은 정보가 담기는 요소
     </body>
 </html>
 ```
 - <>꺽새괄호 닫는 태그 잊지 말자 !!! 
+
 
