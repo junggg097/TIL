@@ -10,7 +10,7 @@
 
 ### HTML 요소
 
-![element](element.png)
+![element](img/element.png)
 
 - 요소 (element) : html을 이루는 단위   
 - 태그(tag) : html 요소를 정의한다. 여는 태그 , 닫는 태그로 짝 이룸   

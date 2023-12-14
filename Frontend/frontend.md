@@ -12,7 +12,7 @@
 - 브라우저는 서로 다른 많은 페이지를 우리에게 제공한다.
 - > 인터넷을 통해 페이지를 달라고 요청 보내면 ,인터넷의 어떤 컴퓨터가 페이지를 응답해준다.
 
-![ClientServer](clientSever.png)
+![ClientServer](img/clientSever.png)
 
 ### Client 클라이언트
 - 서비스 주세요 !!!

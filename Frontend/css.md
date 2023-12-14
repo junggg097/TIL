@@ -12,7 +12,7 @@
   - 글씨체 , 크기, 색상 등
 - 값(Value) : 속성을 어떻게 변경할 지
 
-![css](css.PNG)
+![css](img/css.PNG)
 
 ## CSS 를 HTML 에 적용하는 3가지 방법
 ### 1. Inline CSS
@@ -56,3 +56,15 @@ h3 {
   color: blue;
 }
 ```
+
+## CSS Box Model
+요소를 그릴 때 상자를 바탕으로 요소와 요소의 내용
+다른 요소들을 어떻게 그릴 지 결정하는 방법
+
+![box](img/cssBox.png)
+
+- content : 요소 내부의 내용
+- padding : 테두리부터 요소의 내용까지의 공간
+- border : 요소의 테두리
+- margin : 요소의 테두리부터 외부의 요소와의 공간
+
