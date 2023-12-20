@@ -36,3 +36,7 @@
 - [세렝게티 MBTI](codeLion/MBTI/mbti.md)
 ## Frontend
 - [Frontend](Frontend/frontend.md)
+
+## SQL
+- [Normalization](DataBase/normalization.md)
+- [JDBC](DataBase/JDBC.md)
