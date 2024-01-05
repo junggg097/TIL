@@ -14,6 +14,7 @@ public class Student() {}
 - JPA 명세를 바탕으로 작동하는 ORM 프레임워크
 - JPA 로 표현된 객체를 실제 DB에 적용 및 사용
 
+## JPA 설정부분
 ### build.gradle 에 추가하기
 ```
 //sqlite
@@ -38,6 +39,9 @@ spring:
 
 
 ```
+- `spring.jpa.hibernate.ddl-auto` : Entity 객체를 적용하기 위한 DDL을 어떻게 실행할지에 대한 옵션
+- `spring.jpa.show-sql` : 실제로 실행한 SQL을 콘솔에서 확인하는 옵션
+- `spring.jpa.database-platform` : 사용할 SQL Dialect를 지정하는 옵션
 
 ### ArticleEntity.java
 ```java

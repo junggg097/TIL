@@ -41,5 +41,6 @@
 - [Normalization](DataBase/normalization.md)
 - [JDBC](DataBase/JDBC.md)
 
-## JPA
+## Spring Data JPA
 - [JPA](JPA.md)
+- [ManyToOne&OneToMany](mtootm.md)
