@@ -40,3 +40,6 @@
 ## SQL
 - [Normalization](DataBase/normalization.md)
 - [JDBC](DataBase/JDBC.md)
+
+## JPA
+- [JPA](JPA.md)
