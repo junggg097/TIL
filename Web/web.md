@@ -40,7 +40,8 @@ TCP (Transmission Control Protocol)
 - 실제로 전달할 데이터를 쪼개고,
 - 쪼개진 데이터가 정상적인지를 판단하기 위한 정보와 함께 패킷의 단위로 보낸다.
 
-### 세션 계층 & 표현 계층
+### 5계층 : 세션 계층 & 6계층 : 표현 계층
+
 세션 계층
 : TCP 를 비롯한 전송 계층 통신의 세션을 관리하는 계층   
 - 두 컴퓨터를 연결   
@@ -52,8 +53,54 @@ TCP (Transmission Control Protocol)
 - 하위 계층에서 데이터를 정상적으로 전송할 수 있도록   
 - 전송받은 데이터를 정상적으로 해석할 수 있도록
 
-### 응용 계층
+### 7계층 : 응용 계층
 하위 계층을 통해 전달된 데이터는 컴퓨터(프로세스)가 해석할 수 있는 형태로,
 온전히 전달되었을 것을 기대할 수 있다.
 - 그 전달된 데이터가 어떤 형태여야 하는 지를 정의하는 계층
 - HTTP , SMTP, FTP ...
+ 
+# HTTP
+
+### HyperText Transfer Protocol
+- 응용계층의 통신 규약 ( 통신 계층 이후 전달된 데이터가 **어떻게** 표현되어 있는 지)
+- 클라이언트와 서버가 이야기 나눌 때 주고받는 문서의 양식 같은 것
+- HTML 문서와 같은 자원을 주고받을 수 있도록 하는 규약
+- 클라이언트가 요청하면 서버는 응답하는 , Client - Sever Protocol 이라고도 부른다.
+
+## HTTP Request
+
+**Request Line**
+- HTTP Method( GET, POST ) , URL 경로, HTTP 버전
+
+**Request Headers** ( 편지 봉투 )
+- 요청에 대한 부수적인 정보
+- 어떤 방식으로 해석해야 하는 지
+- 어떤 형태의 응답을 기대하는 지 
+
+**Request Body** ( 편지지)
+- 요청을 통해 전달하고 싶은 실제 데이터
+- 상황에 따라 ( 조회 요청 등 ) 생략 가능 
+
+### HTTP Request Methods
+HTTP 요청이 어떤 목적을 가졌는 지 표현하는 동사
+- GET : 데이터 조회를 목적으로 하는 요청 ( READ )
+- POST :  데이터를 포함한 요청을 보낼 때 (CREATE)
+- PUT : 데이터를 포함한 요청을 보낼 때 ( UPDATE )
+- DELETE : 데이터를 삭제하는 요청을 보낼 때 ( DELETE)
+
+## HTTP Response
+
+HTTP Request 와 차이점 : 첫번째 파트만 다름 ( Request Line, Status Line )  
+구조 자체는 비슷하다.
+
+**Status Line**
+- HTTP 버전 , 상태 코드 , 상태 코드 메세지
+
+**Response Headers** 
+- 응답에 대한 부수적인 정보
+- 어떤 방식으로 해석해야 하는 지
+
+**Response Body** 
+- 요청을 통해 전달하고 싶은 실제 데이터
+
+### HTTP 
