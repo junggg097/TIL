@@ -1,4 +1,7 @@
 # Web
+- [OSI & TCP/IP](#osi--tcpip)
+- [HTTP](#http)
+
 
 ## OSI & TCP/IP
 ![WEB](OSI.png)
@@ -103,4 +106,19 @@ HTTP Request 와 차이점 : 첫번째 파트만 다름 ( Request Line, Status L
 **Response Body** 
 - 요청을 통해 전달하고 싶은 실제 데이터
 
-### HTTP 
+--------------------------------------------------------
+![web server](web%20server.PNG)
+Web Server
+: 요청에 해당하는 파일을 돌려주는 것   
+- http 응답
+
+![web application](web%20app.PNG)
+Web Application
+: 웹 서버 상에서 실행되며 , 웹 서버가 전달한 요청에 따라 알맞은 응답을 생성해내는 응용 소프트웨어의 등장   
+- 기능을 브라우저에서 제공
+
+![web application server](web%20appserver.PNG)
+Web Application Server
+: Web Server 를 내장시켜 바로 실행할 수 있게 만들자 !  
+- web server + web application
+
