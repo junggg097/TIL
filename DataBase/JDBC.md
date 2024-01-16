@@ -444,7 +444,7 @@ public class ArticleDao {
 - statement 를 활용하여 JDBC에 SQL문을 전달한다.
 
 ### `그림으로  보는 순서도 `
-![daoservice](dao.PNG)
+    ![daoservice](dao.PNG)
 
 ### 예제
 - [Article](Article)

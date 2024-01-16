@@ -70,7 +70,7 @@ public class ArticleEntity {
 
 ```
 
-## Annoatation
+## Annotation
 ### @Table , @Column
 ```java
 @Table(name="article")
