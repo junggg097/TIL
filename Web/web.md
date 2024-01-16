@@ -4,7 +4,7 @@
 
 
 ## OSI & TCP/IP
-![WEB](OSI.png)
+![WEB](img/OSI.png)
 
 ## OSI
 ### 1계층 : 물리 계층
