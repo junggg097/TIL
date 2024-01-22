@@ -49,6 +49,7 @@
 - [OSI & TCP/IP](Web/web.md)
 - [HTTP](Web/http.md)
 - [Deployment](Web/deployment.md)
+- [Query Parameter](Web/query.md)
 
 ## Rest
 -[Rest](Rest/rest.md)

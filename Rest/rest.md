@@ -7,6 +7,7 @@
   - 확장성 확보
   - 사용 편의성 증대
 
+## 제약 사항
 ### Client - Server Architecture
 - 클라이언트와 서버의 역할 분리
 - 서버는 데이터가 어떤 방식으로 표현되는 지 몰라도 된다.
@@ -54,8 +55,9 @@
     Content-Type: application/json
     ```
     
-- HAETOAS ( Hypermedia As The Engine Of Application State )
+### HAETOAS ( Hypermedia As The Engine Of Application State )
   - 잘 구현된 REST는 , 최초의 URL 에 접근했을 때, 이후 서버가 제공하는 모든 정보에 도달할 수 있는 방법을 알 수 있어야 한다.
-  - 주소를 입력해 페이지로 이동한 뒤, 그 내부의 링크를 이용해 사이트를 활용하는 개념
-  - ![haetoas](haetoas.PNG)
-  
+    - 주소를 입력해 페이지로 이동한 뒤, 그 내부의 링크를 이용해 사이트를 활용하는 개념
+      ![haetoas](haetoas.PNG)
+
+ 
