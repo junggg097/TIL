@@ -48,3 +48,100 @@
 
 ![편향이진트리](img/skewedBinaryTree.PNG)
 
+## 이진 트리 배열로 표현하기
+![이진트리배열](img/binaryTreeArr.PNG)  
+![이진트리배열2](img/binaryTreeArr2.PNG)
+
+
+## 이진 트리 순회 
+이진 트리의 각 노드를 한번씩만 방문하는 체계적인 방법  
+![순회](img/순회.PNG)
+- 루트 노드(V), 왼쪽 서브트리 (L), 오른쪽 서브트리(R) 를 정해진 순서대로 
+- **전위 순회 (VLR)**
+  - 루트 노드 -> 왼쪽 서브트리 -> 오른쪽 서브트리
+- **중위 순회 (LVR)**
+    - 왼쪽 서브트리 -> 루트 노드 -> 오른쪽 서브트리
+- **후위 순회 (LRV)**
+    - 왼쪽 서브트리 -> 오른쪽 서브트리 -> 루트 노드
+
+## TreeArray
+```java
+    // 총 노드의 갯수
+    private int nodes;
+
+    // 실제 트리를 담고있는 배열
+    private int[] arr;
+
+    // 배열을 담는다.
+    public void setArr(int[] arr) {
+        this.arr = arr;
+        this.nodes = arr.length;
+```  
+
+### 전위순회 (VLR)
+```java
+// node: 현재 트리의 루트 노드 index
+public void traversePreorder(int node) {
+    // node가 배열을 벗어나지 않고,
+    // 데이터가 저장되어 있다 (0이 아니다)
+    if (node < nodes && arr[node] != 0) {
+        // V 방문
+        System.out.print(arr[node] + ", ");
+        // L 방문
+        this.traversePreorder(node * 2);
+        // R 방문
+        this.traversePreorder(node * 2 + 1);
+    }
+}
+```
+
+### 중위순회 (LVR)
+```java
+public void traverseInorder(int node) {
+        if (node < nodes && arr[node] != 0) {
+          // L 방문
+          this.traverseInorder(node * 2);
+          // V 방문
+          System.out.print(arr[node] + ", ");
+          // R 방문
+          this.traverseInorder(node * 2 + 1);
+        }
+}
+```
+
+### 후위순회 (LRV)
+```java
+public void traversePostorder(int node) {
+    if (node < nodes && arr[node] != 0) {
+        // L 방문
+        this.traversePostorder(node * 2);
+        // R 방문
+        this.traversePostorder(node * 2 + 1);
+        // V 방문
+        System.out.print(arr[node] + ", ");
+    }
+}
+```
+
+### 결과
+```java
+public static void main(String[] args) {
+        TreeArray tree = new TreeArray();
+        tree.setArr(new int[]{
+                0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+        });
+        // 트리의 루트 노드는 1이다
+        tree.traversePreorder(1);
+        System.out.println();
+        tree.traverseInorder(1);
+        System.out.println();
+        tree.traversePostorder(1);
+}
+        // 전위순회
+        1, 2, 4, 8, 9, 5, 10, 11, 3, 6, 12, 13, 7, 14, 15
+        // 중위순회
+        8, 4, 9, 2, 10, 5, 11, 1, 12, 6, 13, 3, 14, 7, 15
+        // 후우순회
+        8, 9, 4, 10, 11, 5, 2, 12, 13, 6, 14, 15, 7, 3, 1
+
+```
