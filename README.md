@@ -31,6 +31,7 @@
 - [Queue](JAVA/day16/day16.md)
 - [Brute Force](JAVA/day17/day17.md)
 - [Tree](Tree/tree.md)
+- [Heap](Heap/Heap.md)
 ## codeLion
 - [JavaScript](codeLion/javaScript/javaScript.md)
 - [HTML / CSS](codeLion/html/html.md)
