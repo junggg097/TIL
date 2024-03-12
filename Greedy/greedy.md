@@ -22,6 +22,50 @@ A - > C 까지의 거리를 구하려면 ? . . .
 
 ![divide](img/divide.PNG)
 
+### 하노이의 탑
+```java
+public class Prob11729 {
+    private static StringBuilder towerBuilder = new StringBuilder();
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        // 원판의 갯수
+        int n = Integer.parseInt(reader.readLine());
+        // pow 가 double을 반환하기때문에 앞에 int 붙혀줌
+        // 점화식을 이용해 이동횟수를 먼저 넣어준다.
+        towerBuilder.append((int)(Math.pow(2,n) - 1)).append('\n');
+        hanoi(n, 1,3,2);
+        System.out.println(towerBuilder);
+    }
+
+    private static void hanoi (
+            // 하노이의 탑의 높이
+            int height,
+            // 현재 출발하고자 하는 기둥
+            int start,
+            // 목표로 하는 기둥
+            int end,
+            // 제 3의 기둥
+            int other
+    ) {
+        // 높이가 1이라면 , start -> end로 이동시키면 된다.
+        if (height == 1) {
+            towerBuilder.append(start + " " + end + '\n');
+        }
+
+        // 높이가 2 이상이면 ?
+        else  {
+            // 1. 한 단계 아래 높이의 원반들을 other로 이동한다.
+            hanoi(height-1,start,other,end);
+            // 2. 제일 아래 원반을 end로 이동한다.
+            towerBuilder.append(start + " " + end + '\n');
+            // 3. other에 이동된 한단계 아래 높이의 원반들을 end로 이동한다.
+            hanoi(height-1,other,end,start);
+        }
+
+    }
+}
+```
 ## 병합 정렬
 분할 정복 기법을 이용한 대표적 정렬 알고리즘
 ![병합정렬](img/병합.PNG)
